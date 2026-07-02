@@ -36,13 +36,14 @@ export const metadata: Metadata = {
 
   creator: "A&I Consulting",
 
-  metadataBase: new URL("https://www.aiconsulting.in"),
+  // Update this to your custom domain once you have one
+  metadataBase: new URL("https://aiconsulting-iota.vercel.app"),
 
   openGraph: {
     title: "A&I Consulting",
     description:
       "Practical Manufacturing Solutions. Hands-on Execution. Sustainable Results.",
-    url: "https://www.aiconsulting.in",
+    url: "https://aiconsulting-iota.vercel.app",
     siteName: "A&I Consulting",
     locale: "en_IN",
     type: "website",
@@ -51,6 +52,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+
+  verification: {
+    google: "9D9zNzi_lMYSMcs9oqhrMhycZJKwXm6ZRxA4q-UBvbk",
   },
 };
 
