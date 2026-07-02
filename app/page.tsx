@@ -5,8 +5,17 @@ import {
   TrendingUp,
   Building2,
   Wrench,
-  Cpu,
   Target,
+  ShieldCheck,
+  ArrowRight,
+  Cog,
+  Gauge,
+  CircleDollarSign,
+  AlertTriangle,
+  Clock3,
+  Boxes,
+  Settings,
+  Hammer,
 } from "lucide-react";
 
 export default function Home() {
@@ -16,48 +25,126 @@ export default function Home() {
       {/* Hero */}
       <Hero />
 
-      {/* Statistics */}
+      {/* Brand Statement */}
 
-      <section className="bg-white py-10 border-t border-gray-200">
+      <section className="bg-slate-900 text-white py-16">
 
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6 text-center">
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <p className="uppercase tracking-[6px] text-red-500 font-bold">
+            A&I CONSULTING
+          </p>
 
-            <div>
-              <h2 className="text-5xl font-extrabold text-red-700">
+          <h2 className="text-4xl lg:text-6xl font-bold mt-5">
+            Manufacturing Excellence
+            <span className="text-red-500"> | </span>
+            Productivity
+            <span className="text-red-500"> | </span>
+            Profitability
+          </h2>
+
+          <p className="max-w-4xl mx-auto mt-8 text-xl leading-9 text-gray-300">
+
+            Helping manufacturers improve productivity,
+            reduce operating costs,
+            strengthen quality,
+            enhance delivery performance
+            and build sustainable profitability through
+            practical shop-floor consulting
+            and hands-on execution.
+
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* Business Results */}
+
+      <section className="bg-white py-20">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[6px] text-red-600 font-bold">
+              RESULTS THAT MATTER
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+
+              Helping Manufacturers Achieve Measurable Business Improvement
+
+            </h2>
+
+            <p className="text-gray-600 text-xl mt-6 max-w-3xl mx-auto leading-8">
+
+              Every manufacturing environment is unique.
+              A&I Consulting focuses on delivering sustainable operational
+              improvements while maintaining complete client confidentiality.
+
+            </p>
+
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+
+            <div className="bg-gray-50 rounded-xl shadow-md p-8 text-center">
+
+              <h3 className="text-5xl font-extrabold text-red-600">
                 25+
-              </h2>
-              <p className="mt-2 text-gray-700">
-                Years Experience
+              </h3>
+
+              <p className="mt-4 text-gray-700 font-medium leading-7">
+
+                Years of Manufacturing Leadership
+
               </p>
+
             </div>
 
-            <div>
-              <h2 className="text-5xl font-extrabold text-red-700">
-                ₹100Cr+
-              </h2>
-              <p className="mt-2 text-gray-700">
-                Greenfield Projects
+            <div className="bg-gray-50 rounded-xl shadow-md p-8 text-center">
+
+              <h3 className="text-5xl font-extrabold text-red-600">
+                15+
+              </h3>
+
+              <p className="mt-4 text-gray-700 font-medium leading-7">
+
+                Manufacturing Domains & Core Capabilities
+
               </p>
+
             </div>
 
-            <div>
-              <h2 className="text-5xl font-extrabold text-red-700">
-                50%
-              </h2>
-              <p className="mt-2 text-gray-700">
-                Productivity Gain
+            <div className="bg-gray-50 rounded-xl shadow-md p-8 text-center">
+
+              <h3 className="text-5xl font-extrabold text-red-600">
+
+                Multiple
+
+              </h3>
+
+              <p className="mt-4 text-gray-700 font-medium leading-7">
+
+                Greenfield & Plant Expansion Projects
+
               </p>
+
             </div>
 
-            <div>
-              <h2 className="text-5xl font-extrabold text-red-700">
-                17.5%
-              </h2>
-              <p className="mt-2 text-gray-700">
-                Highest EBITDA
+            <div className="bg-gray-50 rounded-xl shadow-md p-8 text-center">
+
+              <ShieldCheck className="mx-auto text-red-600 w-12 h-12 mb-4" />
+
+              <p className="text-gray-700 font-medium leading-7">
+
+                Client Confidentiality
+                <br />
+                Always Protected
+
               </p>
+
             </div>
 
           </div>
@@ -66,9 +153,358 @@ export default function Home() {
 
       </section>
 
-      {/* Why A&I Consulting */}
+      {/* Manufacturing Challenges */}
 
       <section className="bg-gray-50 py-20">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[6px] text-red-600 font-bold">
+
+              MANUFACTURING CHALLENGES
+
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+
+              Challenges We Help Solve
+
+            </h2>
+
+            <p className="text-gray-600 text-xl mt-6 max-w-3xl mx-auto leading-8">
+
+              Practical consulting focused on solving real manufacturing
+              problems—not producing lengthy reports.
+
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <Gauge className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+
+                Low Productivity
+
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+
+                Improve throughput, eliminate bottlenecks
+                and maximise production capacity.
+
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <CircleDollarSign className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+
+                High Manufacturing Cost
+
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+
+                Reduce waste, improve resource utilisation
+                and optimise manufacturing cost.
+
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <Settings className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+
+                Equipment Breakdowns
+
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+
+                Improve equipment reliability through TPM
+                and maintenance excellence.
+
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <AlertTriangle className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+
+                Quality Problems
+
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+
+                Strengthen process capability,
+                quality systems and defect prevention.
+
+              </p>
+
+            </div>
+                        <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <Clock3 className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+                Delivery Delays
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Improve production planning, scheduling
+                and on-time customer delivery.
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <Boxes className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+                Capacity Constraints
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Unlock hidden capacity through process
+                optimisation and better resource utilisation.
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <Building2 className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+                Greenfield Projects
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Complete support from concept,
+                planning and execution to production start-up.
+              </p>
+
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+
+              <Hammer className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-xl font-bold mb-3">
+                Plant Expansion
+              </h3>
+
+              <p className="text-gray-600 leading-7">
+                Expand manufacturing capability with
+                minimal disruption to ongoing operations.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Solutions */}
+
+      <section className="bg-white py-24">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[6px] text-red-600 font-bold">
+              OUR SOLUTIONS
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+              Practical Manufacturing Solutions
+            </h2>
+
+            <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto leading-8">
+              Focused consulting services designed to improve
+              manufacturing performance and long-term business results.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8">
+
+              <Factory className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-2xl font-bold mb-4">
+                Manufacturing Excellence
+              </h3>
+
+              <ul className="space-y-2 text-gray-600 leading-7">
+                <li>• Productivity Improvement</li>
+                <li>• OEE Improvement</li>
+                <li>• Capacity Enhancement</li>
+                <li>• Process Optimisation</li>
+                <li>• Manufacturing Cost Reduction</li>
+              </ul>
+
+            </div>
+
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8">
+
+              <TrendingUp className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-2xl font-bold mb-4">
+                Lean Manufacturing
+              </h3>
+
+              <ul className="space-y-2 text-gray-600 leading-7">
+                <li>• 5S</li>
+                <li>• Kaizen</li>
+                <li>• Value Stream Mapping</li>
+                <li>• SMED</li>
+                <li>• Standard Work</li>
+              </ul>
+
+            </div>
+
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8">
+
+              <Wrench className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-2xl font-bold mb-4">
+                Total Productive Maintenance
+              </h3>
+
+              <ul className="space-y-2 text-gray-600 leading-7">
+                <li>• Planned Maintenance</li>
+                <li>• Autonomous Maintenance</li>
+                <li>• Breakdown Reduction</li>
+                <li>• Equipment Reliability</li>
+                <li>• Spare Parts Optimisation</li>
+              </ul>
+
+            </div>
+
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8">
+
+              <Building2 className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-2xl font-bold mb-4">
+                Greenfield & Plant Expansion
+              </h3>
+
+              <ul className="space-y-2 text-gray-600 leading-7">
+                <li>• Plant Layout</li>
+                <li>• Utility Planning</li>
+                <li>• Equipment Selection</li>
+                <li>• Project Execution</li>
+                <li>• Production Ramp-up</li>
+              </ul>
+
+            </div>
+
+            <div className="bg-gray-50 rounded-xl shadow-lg p-8 md:col-span-2 lg:col-span-2">
+
+              <Cog className="text-red-600 w-12 h-12 mb-5"/>
+
+              <h3 className="text-2xl font-bold mb-4">
+                Electroplating Excellence
+              </h3>
+
+              <ul className="grid md:grid-cols-2 gap-2 text-gray-600 leading-7">
+                <li>• Copper Plating</li>
+                <li>• Zinc Plating</li>
+                <li>• Process Optimisation</li>
+                <li>• Surface Quality Improvement</li>
+                <li>• Line Upgradation</li>
+                <li>• Chemical Process Optimisation</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Industries */}
+
+      <section className="bg-slate-900 text-white py-24">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[6px] text-red-500 font-bold">
+              INDUSTRIES WE SERVE
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+              Manufacturing Sectors We Support
+            </h2>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+            <div className="bg-slate-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-3">Automotive Manufacturing</h3>
+              <p className="text-gray-300">Component manufacturing, process optimisation and operational excellence.</p>
+            </div>
+
+            <div className="bg-slate-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-3">Tube Manufacturing</h3>
+              <p className="text-gray-300">Tube mills, forming, welding and finishing operations.</p>
+            </div>
+
+            <div className="bg-slate-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-3">Electroplating</h3>
+              <p className="text-gray-300">Copper and zinc plating process improvement and quality enhancement.</p>
+            </div>
+
+            <div className="bg-slate-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-3">Engineering Components</h3>
+              <p className="text-gray-300">Continuous improvement for engineering and industrial manufacturing.</p>
+            </div>
+
+            <div className="bg-slate-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-3">Steel Processing</h3>
+              <p className="text-gray-300">Coil processing, fabrication and production optimisation.</p>
+            </div>
+
+            <div className="bg-slate-800 rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-3">Heavy Manufacturing</h3>
+              <p className="text-gray-300">Operational improvement for complex manufacturing environments.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* Why A&I Consulting */}
+
+      <section className="bg-gray-50 py-24">
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -79,13 +515,12 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl lg:text-5xl font-bold mt-4">
-              Practical Manufacturing Leadership
+              Why Manufacturers Choose A&I Consulting
             </h2>
 
             <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto leading-8">
-              Manufacturing consulting built on practical shop-floor
-              leadership, hands-on execution and measurable business
-              results—not just recommendations.
+              Practical manufacturing consulting focused on measurable business
+              improvement through hands-on execution—not just recommendations.
             </p>
 
           </div>
@@ -94,92 +529,90 @@ export default function Home() {
 
             <div className="bg-white rounded-xl shadow-lg p-8">
 
-              <Factory className="text-red-600 w-12 h-12 mb-5" />
+              <Factory className="text-red-600 w-12 h-12 mb-5"/>
 
               <h3 className="text-2xl font-bold mb-3">
-                Manufacturing Leadership
+                Practical Manufacturing Leadership
               </h3>
 
               <p className="text-gray-600 leading-7">
-                More than 25 years of practical manufacturing
-                leadership including Plant Head responsibility.
+                More than 25 years of practical leadership across production,
+                maintenance, engineering, projects and operational improvement.
               </p>
 
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
 
-              <Building2 className="text-red-600 w-12 h-12 mb-5" />
+              <Target className="text-red-600 w-12 h-12 mb-5"/>
 
               <h3 className="text-2xl font-bold mb-3">
-                Greenfield Projects
+                Hands-on Execution
               </h3>
 
               <p className="text-gray-600 leading-7">
-                Successfully executed greenfield manufacturing
-                projects from planning through commissioning.
+                Working alongside your team to implement sustainable
+                improvements on the shop floor.
               </p>
 
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
 
-              <TrendingUp className="text-red-600 w-12 h-12 mb-5" />
+              <TrendingUp className="text-red-600 w-12 h-12 mb-5"/>
 
               <h3 className="text-2xl font-bold mb-3">
-                Productivity Improvement
+                Sustainable Business Improvement
               </h3>
 
               <p className="text-gray-600 leading-7">
-                Delivered measurable improvements in productivity,
-                quality, profitability and operational performance.
+                Focused on improving productivity, quality, reliability
+                and long-term profitability.
               </p>
 
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
 
-              <Cpu className="text-red-600 w-12 h-12 mb-5" />
+              <ShieldCheck className="text-red-600 w-12 h-12 mb-5"/>
 
               <h3 className="text-2xl font-bold mb-3">
-                Automation Expertise
+                Client Confidentiality
               </h3>
 
               <p className="text-gray-600 leading-7">
-                Extensive experience with PLCs, drives,
-                process automation and production line upgrades.
+                Every engagement is handled with complete professionalism
+                and strict confidentiality.
               </p>
 
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
 
-              <Wrench className="text-red-600 w-12 h-12 mb-5" />
+              <Building2 className="text-red-600 w-12 h-12 mb-5"/>
 
               <h3 className="text-2xl font-bold mb-3">
-                Shop-floor Problem Solving
+                Greenfield Expertise
               </h3>
 
               <p className="text-gray-600 leading-7">
-                Practical troubleshooting of production,
-                maintenance and tooling challenges to deliver
-                sustainable improvements.
+                Supporting manufacturing companies from planning and design
+                through commissioning and production ramp-up.
               </p>
 
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
 
-              <Target className="text-red-600 w-12 h-12 mb-5" />
+              <Wrench className="text-red-600 w-12 h-12 mb-5"/>
 
               <h3 className="text-2xl font-bold mb-3">
-                Sustainable Results
+                Practical Problem Solving
               </h3>
 
               <p className="text-gray-600 leading-7">
-                Focused on improving productivity, reducing costs,
-                increasing reliability and supporting long-term
-                EBITDA growth.
+                Solving production, maintenance and process challenges using
+                practical, data-driven solutions.
               </p>
 
             </div>
@@ -190,27 +623,86 @@ export default function Home() {
 
       </section>
 
+      {/* Consulting Process */}
+
+      <section className="bg-white py-24">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[6px] text-red-600 font-bold">
+              OUR APPROACH
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mt-4">
+              Our Consulting Process
+            </h2>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8 mt-16 text-center">
+
+            {[
+              "Factory Assessment",
+              "Root Cause Analysis",
+              "Improvement Roadmap",
+              "Implementation",
+              "Performance Review",
+              "Sustainable Results",
+            ].map((step, index) => (
+
+              <div key={index}>
+
+                <div className="w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center text-2xl font-bold mx-auto">
+                  {index + 1}
+                </div>
+
+                <h3 className="mt-6 font-bold text-lg">
+                  {step}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
       {/* CTA */}
 
-      <section className="bg-[#0f172a] text-white py-20">
+      <section className="bg-slate-900 text-white py-24">
 
-        <div className="max-w-4xl mx-auto text-center px-6">
+        <div className="max-w-4xl mx-auto px-6 text-center">
 
-          <h2 className="text-4xl font-bold">
-            Ready to Improve Your Manufacturing Performance?
+          <h2 className="text-5xl font-bold leading-tight">
+
+            Ready to Transform Your Manufacturing Performance?
+
           </h2>
 
-          <p className="mt-6 text-xl text-gray-300 leading-8">
-            Partner with A&I Consulting to improve productivity,
-            reduce costs, execute greenfield projects and build
-            world-class manufacturing operations.
+          <p className="mt-8 text-xl text-gray-300 leading-9">
+
+            Whether you're planning a greenfield facility,
+            improving productivity,
+            reducing manufacturing costs,
+            or solving persistent shop-floor challenges,
+            A&I Consulting is ready to help.
+
           </p>
 
           <Link
             href="/contact"
-            className="inline-block mt-10 bg-red-600 hover:bg-red-700 px-10 py-4 rounded-lg text-xl font-bold transition"
+            className="inline-flex items-center gap-3 mt-10 bg-red-600 hover:bg-red-700 transition px-10 py-5 rounded-xl text-xl font-bold"
           >
-            Request a Consultation
+
+            Schedule a Consultation
+
+            <ArrowRight size={22}/>
+
           </Link>
 
         </div>
