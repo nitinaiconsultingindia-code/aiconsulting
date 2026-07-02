@@ -1,32 +1,44 @@
-import type { MetadataRoute } from "next";
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://aiconsulting-iota.vercel.app";
+
   return [
     {
-      url: "https://aiconsulting.vercel.app",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://aiconsulting.vercel.app/about",
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
-      url: "https://aiconsulting.vercel.app/services",
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
-      url: "https://aiconsulting.vercel.app/industries",
+      url: `${baseUrl}/industries`,
       lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
-      url: "https://aiconsulting.vercel.app/projects",
+      url: `${baseUrl}/projects`,
       lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
-      url: "https://aiconsulting.vercel.app/contact",
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }
