@@ -23,10 +23,11 @@ export default function Footer() {
               <h2 className="text-2xl font-bold text-white">
                 A&I Consulting
               </h2>
+
             </div>
 
             <p className="leading-8">
-              Practical Manufacturing Solutions.
+              Practical Manufacturing Consulting.
               <br />
               Hands-on Execution.
               <br />
@@ -35,8 +36,9 @@ export default function Footer() {
 
             <p className="mt-6 text-sm text-gray-400 leading-7">
               Helping manufacturing companies improve productivity,
-              reduce operating costs, execute greenfield projects,
-              implement automation and build world-class manufacturing operations.
+              reduce costs, execute greenfield projects,
+              install production lines and achieve
+              operational excellence.
             </p>
 
           </div>
@@ -54,7 +56,7 @@ export default function Footer() {
               <li><Link href="/about">About</Link></li>
               <li><Link href="/services">Solutions</Link></li>
               <li><Link href="/industries">Industries</Link></li>
-              <li><Link href="/projects">Experience & Results</Link></li>
+              <li><Link href="/projects">Experience</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
 
@@ -71,10 +73,10 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>Operational Excellence</li>
               <li>Greenfield Projects</li>
+              <li>Production Line Installation</li>
               <li>Electroplating</li>
-              <li>Automation (PLC & Drives)</li>
-              <li>Maintenance & Reliability</li>
-              <li>Manufacturing Strategy</li>
+              <li>Energy Saving Projects</li>
+              <li>Localization Projects</li>
             </ul>
 
           </div>
@@ -89,45 +91,90 @@ export default function Footer() {
 
             <div className="space-y-5">
 
+              {/* Email */}
+
               <div className="flex items-start gap-3">
+
                 <Mail className="text-red-500 mt-1" size={18} />
 
                 <div>
-                  <p className="font-semibold text-white">Email</p>
-                  <p>info@aiconsulting.in</p>
+
+                  <p className="font-semibold text-white">
+                    Email
+                  </p>
+
+                  <a
+                    href="mailto:nitin.aiconsulting.india@gmail.com"
+                    className="hover:text-red-500 transition"
+                  >
+                    nitin.aiconsulting.india@gmail.com
+                  </a>
+
                 </div>
+
               </div>
 
+              {/* Mobile */}
+
               <div className="flex items-start gap-3">
+
                 <Phone className="text-red-500 mt-1" size={18} />
 
                 <div>
-                  <p className="font-semibold text-white">Phone</p>
-                  <p>+91 XXXXX XXXXX</p>
+
+                  <p className="font-semibold text-white">
+                    Mobile
+                  </p>
+
+                  <a
+                    href="tel:+917984804249"
+                    className="hover:text-red-500 transition"
+                  >
+                    +91 79848 04249
+                  </a>
+
                 </div>
+
               </div>
 
+              {/* Location */}
+
               <div className="flex items-start gap-3">
+
                 <MapPin className="text-red-500 mt-1" size={18} />
 
                 <div>
-                  <p className="font-semibold text-white">Location</p>
-                  <p>Vadodara, Gujarat, India</p>
+
+                  <p className="font-semibold text-white">
+                    Location
+                  </p>
+
+                  <p>
+                    Vadodara, Gujarat, India
+                  </p>
+
                 </div>
+
               </div>
 
+              {/* LinkedIn */}
+
               <div className="flex items-start gap-3">
+
                 <Factory className="text-red-500 mt-1" size={18} />
 
                 <div>
-                  <p className="font-semibold text-white">LinkedIn</p>
-                  <a
-                    href="#"
-                    className="hover:text-red-500 transition"
-                  >
+
+                  <p className="font-semibold text-white">
+                    LinkedIn
+                  </p>
+
+                  <p>
                     Coming Soon
-                  </a>
+                  </p>
+
                 </div>
+
               </div>
 
             </div>
@@ -141,6 +188,7 @@ export default function Footer() {
         </div>
 
       </div>
+
     </footer>
   );
 }
