@@ -1,4 +1,7 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   Phone,
   Mail,
@@ -13,6 +16,51 @@ import {
 } from "lucide-react";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+  name: "",
+  company: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+});
+
+const handleChange = (
+  e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      "service_1gab1da",
+      "template_dnbrzji",
+      formData,
+      "MAuXQ6As5TquaZVH2"
+    );
+
+    alert("Consultation request sent successfully.");
+
+    setFormData({
+      name: "",
+      company: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
+
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send consultation request.");
+  }
+};
   return (
     <main className="bg-gray-50">
 
@@ -102,8 +150,8 @@ export default function ContactPage() {
                 Maintenance
               </h3>
               <p className="text-gray-600 leading-7">
-                Preventive maintenance, reliability improvement,
-                breakdown reduction and asset management.
+                Preventive maintenance, reliability improvement and
+                breakdown reduction.
               </p>
             </div>
 
@@ -157,9 +205,12 @@ export default function ContactPage() {
                   <Mail className="text-red-600 w-8 h-8"/>
                   <div>
                     <h3 className="font-bold text-xl">Email</h3>
-                    <p className="text-gray-600">
-                      info@aiconsulting.in
-                    </p>
+                    <a
+  href="mailto:nitin.aiconsulting.india@gmail.com"
+  className="text-gray-600 hover:text-red-600 transition"
+>
+  nitin.aiconsulting.india@gmail.com
+</a>
                   </div>
                 </div>
 
@@ -167,9 +218,12 @@ export default function ContactPage() {
                   <Phone className="text-red-600 w-8 h-8"/>
                   <div>
                     <h3 className="font-bold text-xl">Phone</h3>
-                    <p className="text-gray-600">
-                      +91 XXXXX XXXXX
-                    </p>
+                    <a
+  href="tel:+917984804249"
+  className="text-gray-600 hover:text-red-600 transition"
+>
+  +91 79848 04249
+</a>
                   </div>
                 </div>
 
@@ -207,51 +261,69 @@ export default function ContactPage() {
                 Request a Consultation
               </h2>
 
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
 
                 <div className="grid md:grid-cols-2 gap-6">
 
                   <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
-                  />
+  type="text"
+  name="name"
+  value={formData.name}
+  onChange={handleChange}
+  placeholder="Your Name"
+  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
 
                   <input
-                    type="text"
-                    placeholder="Company"
-                    className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
-                  />
+  type="text"
+  name="company"
+  value={formData.company}
+  onChange={handleChange}
+  placeholder="Company"
+  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
 
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
 
                   <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
-                  />
+  type="email"
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+  placeholder="Email Address"
+  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
 
                   <input
-                    type="tel"
-                    placeholder="Mobile Number"
-                    className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
-                  />
+  type="tel"
+  name="phone"
+  value={formData.phone}
+  onChange={handleChange}
+  placeholder="Mobile Number"
+  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
 
                 </div>
 
                 <input
-                  type="text"
-                  placeholder="Subject"
-                  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
-                />
+  type="text"
+  name="subject"
+  value={formData.subject}
+  onChange={handleChange}
+  placeholder="Subject"
+  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
 
                 <textarea
-                  rows={6}
-                  placeholder="Tell us about your manufacturing challenge..."
-                  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
-                ></textarea>
+  rows={6}
+  name="message"
+  value={formData.message}
+  onChange={handleChange}
+  placeholder="Tell us about your manufacturing challenge..."
+  className="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+/>
 
                 <button
                   type="submit"
@@ -318,7 +390,7 @@ export default function ContactPage() {
               <ul className="space-y-3 text-gray-300">
                 <li>✔ Greenfield Projects</li>
                 <li>✔ Electroplating</li>
-                <li>✔ Automation (PLC & Drives)</li>
+                <li>✔ Automation (PLC & Drives) and Energy saving</li>
                 <li>✔ Maintenance & Reliability</li>
               </ul>
 
