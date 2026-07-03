@@ -9,7 +9,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="bg-slate-950 text-white">
+    <section className="bg-slate-50 text-slate-900">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
 
@@ -35,7 +35,7 @@ export default function Hero() {
 
             </h1>
 
-            <h2 className="mt-5 text-2xl lg:text-3xl font-semibold text-gray-200 leading-relaxed">
+            <h2 className="mt-5 text-2xl lg:text-3xl font-semibold text-slate-700 leading-relaxed">
 
               On the Shop Floor...
               <br />
@@ -43,7 +43,7 @@ export default function Hero() {
 
             </h2>
 
-            <p className="mt-8 text-xl text-red-400 font-semibold">
+            <p className="mt-8 text-xl text-slate-600 font-semibold">
 
               Practical Manufacturing Solutions.
               <br />
@@ -57,7 +57,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-3 text-lg">
 
-                <Factory className="w-5 h-5 text-red-500" />
+                <Factory className="w-5 h-5 text-slate-700" />
 
                 Production • Operations • Greenfield Projects
 
@@ -65,7 +65,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-3 text-lg">
 
-                <Wrench className="w-5 h-5 text-red-500" />
+                <Wrench className="w-5 h-5 text-slate-700" />
 
                 Maintenance • Automation • Electroplating
 
@@ -73,7 +73,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-3 text-lg">
 
-                <TrendingUp className="w-5 h-5 text-red-500" />
+                <TrendingUp className="w-5 h-5 text-slate-700" />
 
                 Productivity • Cost Reduction • Profitability
 
@@ -93,7 +93,7 @@ export default function Hero() {
 
               <Link
                 href="/services"
-                className="border border-gray-500 hover:border-white px-7 py-3 rounded-lg font-bold transition"
+                className="border border-slate-300 hover:border-slate-900 hover:bg-slate-100 px-7 py-3 rounded-lg font-bold transition"
               >
                 Explore Solutions
               </Link>
