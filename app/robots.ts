@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://aiconsulting-iota.vercel.app/sitemap.xml",
+    sitemap: "https://aimanufacturingconsultant.com/sitemap.xml",
   };
 }
