@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FloatingButtons from "./components/FloatingButtons";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -67,6 +68,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white">
+        <GoogleAnalytics />
+
         <Navbar />
 
         {children}
