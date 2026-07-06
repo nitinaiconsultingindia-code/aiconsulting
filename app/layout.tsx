@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import FloatingButtons from "./components/FloatingButtons";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -36,7 +37,6 @@ export const metadata: Metadata = {
 
   creator: "A&I Consulting",
 
-  // Your custom domain
   metadataBase: new URL("https://aimanufacturingconsultant.com"),
 
   openGraph: {
@@ -68,8 +68,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white">
         <Navbar />
+
         {children}
+
         <Footer />
+
+        <FloatingButtons />
       </body>
     </html>
   );
