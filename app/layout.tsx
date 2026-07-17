@@ -76,7 +76,7 @@ export default function RootLayout({
 
         <Footer />
 
-        <FloatingButtons />
+        {/* <FloatingButtons /> */}
       </body>
     </html>
   );

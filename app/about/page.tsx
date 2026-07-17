@@ -25,8 +25,8 @@ export default function AboutPage() {
             <div className="flex justify-center">
 
               <Image
-                src="/nitin.jpg"
-                alt="Nitin Kanodiya"
+  src="/consultant-ai.jpg"
+  alt="Manufacturing Consultant"
                 width={420}
                 height={520}
                 className="rounded-2xl border-2 border-red-600 shadow-2xl"

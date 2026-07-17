@@ -107,8 +107,8 @@ export default function Hero() {
           <div className="flex justify-center">
 
             <Image
-              src="/nitin.jpg"
-              alt="Nitin Kanodiya"
+              src="/consultant-ai.jpg"
+  alt="Manufacturing Consultant"
               width={320}
               height={400}
               priority

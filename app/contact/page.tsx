@@ -222,7 +222,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   href="tel:+917984804249"
   className="text-gray-600 hover:text-red-600 transition"
 >
-  +91 79848 04249
+  +91 xxxxx xxxxx
 </a>
                   </div>
                 </div>
