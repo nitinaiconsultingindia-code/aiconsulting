@@ -1,347 +1,183 @@
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function Consulting() {
-  const services = [
-    "EBITDA Improvement & Operational Improvement",
-    "Emergency Process Troubleshooting",
-    "Process & Machinery Automation / Upgradation",
-    "OEE Improvement Support",
-    "Reel-to-Reel Copper Plating Support",
-    "Multistrand Zinc Plating Support",
-    "Extrusion Support for Tube / Cable Industry",
-    "Electrical & Electronics Repair",
-    "Eddy Current Technical Support",
-    "Greenfield Projects & Machinery Commissioning",
-  ];
-
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        overflow: "hidden",
-        background: "#b7e36b",
-        color: "#071a3d",
-      }}
-    >
+    <main className="min-h-screen bg-[#b7e36b] text-slate-900">
 
-      {/* HEADER */}
-      <header
-        style={{
-          height: "58px",
-          borderBottom: "1px solid rgba(0,0,0,0.10)",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "1280px",
-            margin: "0 auto",
-            padding: "0 28px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
+      <Header />
 
-          <Link
-            href="/"
-            style={{
-              fontSize: "22px",
-              fontWeight: 800,
-              color: "#071a3d",
-              textDecoration: "none",
-            }}
-          >
-            A&I
-          </Link>
+      <section>
+        <div className="max-w-7xl mx-auto px-6 py-10 md:py-14">
 
-          <nav
-            style={{
-              display: "flex",
-              gap: "28px",
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.5px",
-            }}
-            className="consulting-nav"
-          >
-            <Link href="/" style={{ color: "#071a3d", textDecoration: "none" }}>
-              HOME
-            </Link>
+          {/* INTRO */}
+          <div className="max-w-4xl">
 
-            <Link
-              href="/consulting"
-              style={{ color: "#071a3d", textDecoration: "none" }}
-            >
+            <p className="text-xs font-bold tracking-[4px] uppercase mb-5">
               CONSULTING
-            </Link>
+            </p>
 
-            <Link
-              href="/trading"
-              style={{ color: "#071a3d", textDecoration: "none" }}
-            >
-              PIPE & TUBE TRADING
-            </Link>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05]">
+              Manufacturing Improvement & Technical Support
+            </h1>
 
-            <Link
-              href="/contact"
-              style={{ color: "#071a3d", textDecoration: "none" }}
-            >
-              CONTACT
-            </Link>
-          </nav>
-
-        </div>
-      </header>
-
-
-      {/* CONTENT */}
-      <div
-        style={{
-          width: "100%",
-          maxWidth: "1280px",
-          height: "calc(100vh - 58px)",
-          margin: "0 auto",
-          padding: "24px 28px",
-          boxSizing: "border-box",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-
-        {/* INTRO */}
-        <div style={{ flexShrink: 0 }}>
-
-          <p
-            style={{
-              fontSize: "10px",
-              fontWeight: 700,
-              letterSpacing: "4px",
-              margin: 0,
-            }}
-          >
-            A&I CONSULTING
-          </p>
-
-          <h1
-            style={{
-              fontSize: "clamp(28px, 3.2vw, 44px)",
-              lineHeight: 1,
-              fontWeight: 800,
-              letterSpacing: "-1.5px",
-              margin: "9px 0 0 0",
-            }}
-          >
-            EBITDA Improvement & Emergency Technical Support
-          </h1>
-
-          <p
-            style={{
-              fontSize: "13px",
-              lineHeight: 1.4,
-              maxWidth: "800px",
-              margin: "10px 0 0 0",
-              color: "#334155",
-            }}
-          >
-            We help continuous tube, pipe, wire and cable manufacturers improve
-            profitability, productivity and operational performance, with rapid
-            technical support when critical problems arise.
-          </p>
-
-        </div>
-
-
-        {/* SERVICES */}
-        <div
-          style={{
-            marginTop: "22px",
-            flex: 1,
-            minHeight: 0,
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-
-          <p
-            style={{
-              fontSize: "10px",
-              fontWeight: 700,
-              letterSpacing: "4px",
-              margin: "0 0 10px 0",
-              flexShrink: 0,
-            }}
-          >
-            OUR SERVICES
-          </p>
-
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "7px",
-              flex: 1,
-              minHeight: 0,
-            }}
-          >
-
-            {services.map((service, index) => (
-
-              <div
-                key={service}
-                style={{
-                  background:
-                    index === 0
-                      ? "#000000"
-                      : "rgba(255,255,255,0.78)",
-
-                  color:
-                    index === 0
-                      ? "#ffffff"
-                      : "#071a3d",
-
-                  border:
-                    index === 0
-                      ? "none"
-                      : "1px solid rgba(0,0,0,0.07)",
-
-                  borderRadius: "14px",
-
-                  padding: "8px 18px",
-
-                  display: "flex",
-                  alignItems: "center",
-
-                  gap: "13px",
-
-                  minWidth: 0,
-
-                  boxSizing: "border-box",
-                }}
-              >
-
-                <span
-                  style={{
-                    fontSize: "10px",
-                    fontWeight: 700,
-                    color:
-                      index === 0
-                        ? "#b7e36b"
-                        : "#58708f",
-                    flexShrink: 0,
-                    width: "22px",
-                  }}
-                >
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-
-
-                <span
-                  style={{
-                    fontSize: "15px",
-                    lineHeight: 1.15,
-                    fontWeight: 600,
-                    letterSpacing: "-0.2px",
-                    minWidth: 0,
-                  }}
-                >
-                  {service}
-                </span>
-
-              </div>
-
-            ))}
+            <p className="mt-6 text-base md:text-lg leading-7 max-w-3xl text-slate-800">
+              Practical technical and operational support for tube, pipe,
+              wire and cable manufacturers — focused on improving
+              productivity, reliability, quality and profitability.
+            </p>
 
           </div>
 
-        </div>
+
+          {/* SERVICES */}
+          <div className="grid md:grid-cols-2 gap-4 mt-10">
+
+            <Service
+              number="01"
+              title="EBITDA Improvement & Operational Improvement"
+              text="Identify and eliminate manufacturing losses, improve productivity, reduce operating costs and strengthen overall plant performance."
+            />
+
+            <Service
+              number="02"
+              title="Emergency Process Troubleshooting"
+              text="Rapid technical support for critical production problems, process instability, quality issues, breakdowns and recurring manufacturing losses."
+              dark
+            />
+
+            <Service
+              number="03"
+              title="Process & Machinery Automation / Upgradation"
+              text="Support for automation improvement, PLCs, drives, controls, machine upgrades and modernization of existing production equipment."
+            />
+
+            <Service
+              number="04"
+              title="OEE Improvement Support"
+              text="Improve availability, performance and quality through structured loss analysis, root-cause identification and shop-floor implementation."
+            />
+
+            <Service
+              number="05"
+              title="Reel-to-Reel Copper Plating Support"
+              text="Technical support for copper plating lines, process control, bath chemistry, quality, defects, productivity and operational stability."
+            />
+
+            <Service
+              number="06"
+              title="Multistrand Zinc Plating Support"
+              text="Process and technical support for multistrand zinc plating operations, quality improvement, process control and troubleshooting."
+            />
+
+            <Service
+              number="07"
+              title="Extrusion Support for Tube / Cable Industry"
+              text="Support for extrusion process improvement, troubleshooting, productivity, quality and equipment-related issues."
+            />
+
+            <Service
+              number="08"
+              title="Electrical & Electronics Repair"
+              text="Troubleshooting support for electrical systems, automation panels, PLCs, AC drives, controls and production equipment."
+            />
+
+            <Service
+              number="09"
+              title="Eddy Current Technical Support"
+              text="Technical support for eddy current inspection systems, defect detection, process diagnosis and improving inspection reliability."
+            />
+
+            <Service
+              number="10"
+              title="Greenfield Projects & Machinery Commissioning"
+              text="Support for new plant setup, machinery selection, installation, commissioning, stabilization and production ramp-up."
+              dark
+            />
+
+          </div>
 
 
-        {/* CTA */}
-        <div
-          style={{
-            marginTop: "18px",
-            background: "#000000",
-            color: "#ffffff",
-            borderRadius: "15px",
-            padding: "15px 22px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "20px",
-            flexShrink: 0,
-          }}
-        >
+          {/* CTA */}
+          <div className="mt-8 bg-black text-white rounded-2xl p-7 md:p-8">
 
-          <div>
-
-            <p
-              style={{
-                fontSize: "9px",
-                fontWeight: 700,
-                letterSpacing: "3px",
-                color: "#b7e36b",
-                margin: 0,
-              }}
-            >
+            <p className="text-xs font-bold tracking-[3px] text-[#b7e36b]">
               NEED TECHNICAL SUPPORT?
             </p>
 
-            <h2
-              style={{
-                fontSize: "20px",
-                lineHeight: 1.1,
-                fontWeight: 700,
-                margin: "4px 0 0 0",
-              }}
-            >
-              Discuss Your Requirement
+            <h2 className="text-2xl md:text-3xl font-bold mt-3 leading-tight">
+              Have a manufacturing problem?
+              <br />
+              Let's discuss it.
             </h2>
+
+            <p className="mt-4 text-sm md:text-base text-white/70 max-w-2xl leading-6">
+              Whether it is an urgent production issue, recurring quality
+              problem, low OEE or a new project, A&I provides practical
+              manufacturing support.
+            </p>
+
+            <Link
+              href="/contact"
+              className="inline-block mt-6 bg-[#b7e36b] text-black px-5 py-2.5 rounded-full text-sm font-bold hover:bg-white transition"
+            >
+              CONTACT A&I →
+            </Link>
 
           </div>
 
-
-          <Link
-            href="/contact"
-            style={{
-              background: "#b7e36b",
-              color: "#000000",
-              padding: "11px 20px",
-              borderRadius: "999px",
-              fontSize: "11px",
-              fontWeight: 700,
-              textDecoration: "none",
-              whiteSpace: "nowrap",
-              flexShrink: 0,
-            }}
-          >
-            DISCUSS YOUR REQUIREMENT →
-          </Link>
-
         </div>
-
-      </div>
-
-
-      {/* MOBILE */}
-      <style>{`
-        @media (max-width: 767px) {
-
-          main {
-            overflow: auto !important;
-          }
-
-          .consulting-nav {
-            display: none !important;
-          }
-
-        }
-      `}</style>
+      </section>
 
     </main>
+  );
+}
+
+
+function Service({
+  number,
+  title,
+  text,
+  dark = false,
+}: {
+  number: string;
+  title: string;
+  text: string;
+  dark?: boolean;
+}) {
+  return (
+    <div
+      className={
+        dark
+          ? "bg-black text-white p-6 md:p-7 rounded-2xl"
+          : "bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10"
+      }
+    >
+
+      <p
+        className={
+          dark
+            ? "text-xs font-bold tracking-[3px] text-[#b7e36b]"
+            : "text-xs font-bold tracking-[3px] text-slate-500"
+        }
+      >
+        {number}
+      </p>
+
+      <h3 className="text-xl font-bold mt-3">
+        {title}
+      </h3>
+
+      <p
+        className={
+          dark
+            ? "mt-2 text-sm text-white/70 leading-6"
+            : "mt-2 text-sm text-slate-700 leading-6"
+        }
+      >
+        {text}
+      </p>
+
+    </div>
   );
 }

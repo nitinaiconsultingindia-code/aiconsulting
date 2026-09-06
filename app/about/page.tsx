@@ -1,62 +1,12 @@
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function About() {
   return (
     <main className="min-h-screen bg-[#b7e36b] text-slate-900">
 
       {/* HEADER */}
-      <header className="border-b border-black/10">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-          <Link
-            href="/"
-            className="text-2xl font-extrabold tracking-tight"
-          >
-            A&I
-          </Link>
-
-          <nav className="hidden md:flex items-center gap-7 text-sm font-semibold">
-
-            <Link
-              href="/"
-              className="hover:opacity-60 transition"
-            >
-              HOME
-            </Link>
-
-            <Link
-              href="/about"
-              className="hover:opacity-60 transition"
-            >
-              ABOUT
-            </Link>
-
-            <Link
-              href="/consulting"
-              className="hover:opacity-60 transition"
-            >
-              CONSULTING
-            </Link>
-
-            <Link
-              href="/trading"
-              className="hover:opacity-60 transition"
-            >
-              PIPE & TUBE TRADING
-            </Link>
-
-            <Link
-              href="/contact"
-              className="hover:opacity-60 transition"
-            >
-              CONTACT
-            </Link>
-
-          </nav>
-
-        </div>
-      </header>
-
+      <Header />
 
       {/* ABOUT HERO */}
       <section>
