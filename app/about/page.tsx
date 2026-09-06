@@ -1,223 +1,217 @@
-import Image from "next/image";
 import Link from "next/link";
-import {
-  Factory,
-  Wrench,
-  Building2,
-  TrendingUp,
-  Users,
-  BadgeCheck,
-  ArrowRight,
-} from "lucide-react";
 
-export default function AboutPage() {
+export default function About() {
   return (
-    <main className="bg-white">
+    <main className="min-h-screen bg-[#b7e36b] text-slate-900">
 
-      {/* Hero */}
-
-      <section className="bg-slate-950 text-white py-20">
-
-        <div className="max-w-7xl mx-auto px-6">
-
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-            <div className="flex justify-center">
-
-              <Image
-  src="/consultant-ai.jpg"
-  alt="Manufacturing Consultant"
-                width={420}
-                height={520}
-                className="rounded-2xl border-2 border-red-600 shadow-2xl"
-                priority
-              />
-
-            </div>
-
-            <div>
-
-              <p className="uppercase tracking-[6px] text-red-500 font-bold mb-5">
-                ABOUT A&I CONSULTING
-              </p>
-
-              <h1 className="text-5xl font-extrabold leading-tight">
-
-                More Than
-                <br />
-                25 Years
-                <br />
-                On The Shop Floor
-
-              </h1>
-
-              <p className="mt-8 text-xl leading-9 text-gray-300">
-
-                I have spent more than two decades solving manufacturing
-                problems where they actually occur—on the shop floor.
-
-                My approach is different from traditional consulting.
-
-                I don't just recommend improvements.
-
-                I work alongside your management, engineers,
-                supervisors and operators to identify root causes,
-                implement practical solutions and deliver measurable
-                business results.
-
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* Philosophy */}
-
-      <section className="py-20">
-
-        <div className="max-w-6xl mx-auto px-6 text-center">
-
-          <h2 className="text-4xl font-bold text-slate-900">
-
-            Practical Manufacturing Solutions.
-            <br />
-            Hands-on Execution.
-            <br />
-            Sustainable Results.
-
-          </h2>
-
-          <p className="mt-8 text-xl text-gray-600 leading-9">
-
-            Whether the challenge is productivity, quality,
-            maintenance, automation, electroplating,
-            greenfield execution or operational excellence,
-            my focus is always implementation—not just advice.
-
-          </p>
-
-        </div>
-
-      </section>
-
-      {/* Expertise */}
-
-      <section className="bg-gray-100 py-20">
-
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Hands-on Manufacturing Leadership
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div className="bg-white rounded-xl p-8 shadow">
-              <Factory className="text-red-600 w-12 h-12 mb-5"/>
-              <h3 className="text-2xl font-bold mb-3">
-                Plant Operations
-              </h3>
-              <p className="text-gray-600 leading-8">
-                Complete responsibility for production,
-                quality, delivery and profitability.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow">
-              <Building2 className="text-red-600 w-12 h-12 mb-5"/>
-              <h3 className="text-2xl font-bold mb-3">
-                Greenfield Projects
-              </h3>
-              <p className="text-gray-600 leading-8">
-                Manufacturing facilities from concept
-                to successful production.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow">
-              <Wrench className="text-red-600 w-12 h-12 mb-5"/>
-              <h3 className="text-2xl font-bold mb-3">
-                Maintenance & Automation
-              </h3>
-              <p className="text-gray-600 leading-8">
-                Reliability, PLC, Drives,
-                utilities and maintenance excellence.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow">
-              <TrendingUp className="text-red-600 w-12 h-12 mb-5"/>
-              <h3 className="text-2xl font-bold mb-3">
-                Productivity Improvement
-              </h3>
-              <p className="text-gray-600 leading-8">
-                Eliminate bottlenecks,
-                reduce waste and improve profitability.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow">
-              <Users className="text-red-600 w-12 h-12 mb-5"/>
-              <h3 className="text-2xl font-bold mb-3">
-                Team Development
-              </h3>
-              <p className="text-gray-600 leading-8">
-                Building high-performance
-                manufacturing teams.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow">
-              <BadgeCheck className="text-red-600 w-12 h-12 mb-5"/>
-              <h3 className="text-2xl font-bold mb-3">
-                Sustainable Results
-              </h3>
-              <p className="text-gray-600 leading-8">
-                Improvements that continue
-                long after the project ends.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* CTA */}
-
-      <section className="bg-slate-950 text-white py-20">
-
-        <div className="max-w-4xl mx-auto text-center px-6">
-
-          <h2 className="text-4xl font-bold">
-
-            Let's Solve Your Manufacturing Challenges
-
-          </h2>
-
-          <p className="mt-6 text-xl text-gray-300">
-
-            If your manufacturing plant is facing productivity,
-            quality, maintenance or operational challenges,
-            let's work together to implement practical solutions.
-
-          </p>
+      {/* HEADER */}
+      <header className="border-b border-black/10">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
           <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 mt-10 bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg font-bold transition"
+            href="/"
+            className="text-2xl font-extrabold tracking-tight"
           >
-            Book Consultation
-            <ArrowRight size={18}/>
+            A&I
           </Link>
 
-        </div>
+          <nav className="hidden md:flex items-center gap-7 text-sm font-semibold">
 
+            <Link
+              href="/"
+              className="hover:opacity-60 transition"
+            >
+              HOME
+            </Link>
+
+            <Link
+              href="/about"
+              className="hover:opacity-60 transition"
+            >
+              ABOUT
+            </Link>
+
+            <Link
+              href="/consulting"
+              className="hover:opacity-60 transition"
+            >
+              CONSULTING
+            </Link>
+
+            <Link
+              href="/trading"
+              className="hover:opacity-60 transition"
+            >
+              PIPE & TUBE TRADING
+            </Link>
+
+            <Link
+              href="/contact"
+              className="hover:opacity-60 transition"
+            >
+              CONTACT
+            </Link>
+
+          </nav>
+
+        </div>
+      </header>
+
+
+      {/* ABOUT HERO */}
+      <section>
+        <div className="max-w-7xl mx-auto px-6 py-10 md:py-14">
+
+          <div className="max-w-4xl">
+
+            <p className="text-xs font-bold tracking-[4px] uppercase mb-5">
+              ABOUT A&I
+            </p>
+
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05]">
+              Manufacturing Experience That Comes From The Shop Floor
+            </h1>
+
+            <div className="mt-7">
+
+              <h2 className="text-2xl md:text-3xl font-bold">
+                Nitin Kanodiya
+              </h2>
+
+              <p className="mt-2 text-sm md:text-base font-semibold tracking-wide">
+                Former Plant Head | Manufacturing Leader
+              </p>
+
+            </div>
+
+            <p className="mt-6 text-base md:text-lg leading-7 max-w-3xl text-slate-800">
+              With more than 25 years of hands-on manufacturing experience,
+              I have worked across tube manufacturing, plant operations,
+              engineering, maintenance, automation, greenfield projects and
+              manufacturing transformation.
+            </p>
+
+            <p className="mt-4 text-base md:text-lg leading-7 max-w-3xl text-slate-800">
+              My experience has been built on the shop floor — solving real
+              manufacturing problems, improving productivity, reducing costs
+              and building reliable production systems.
+            </p>
+
+          </div>
+
+
+          {/* EXPERIENCE BLOCKS */}
+          <div className="grid md:grid-cols-2 gap-4 mt-10">
+
+            {/* 01 */}
+            <div className="bg-black text-white p-6 md:p-7 rounded-2xl">
+
+              <p className="text-xs font-bold tracking-[3px] text-[#b7e36b]">
+                01
+              </p>
+
+              <h3 className="text-xl font-bold mt-3">
+                Tube Manufacturing
+              </h3>
+
+              <p className="mt-2 text-sm text-white/70 leading-6">
+                Hands-on experience across tube manufacturing, downstream
+                processes, plating, coating and extrusion.
+              </p>
+
+            </div>
+
+
+            {/* 02 */}
+            <div className="bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10">
+
+              <p className="text-xs font-bold tracking-[3px] text-slate-500">
+                02
+              </p>
+
+              <h3 className="text-xl font-bold mt-3">
+                Plant Operations
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-700 leading-6">
+                Manufacturing leadership covering productivity, quality,
+                delivery, cost, maintenance and profitability.
+              </p>
+
+            </div>
+
+
+            {/* 03 */}
+            <div className="bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10">
+
+              <p className="text-xs font-bold tracking-[3px] text-slate-500">
+                03
+              </p>
+
+              <h3 className="text-xl font-bold mt-3">
+                Automation & Technical Expertise
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-700 leading-6">
+                Experience with PLCs, drives, automation, electroplating,
+                extrusion, maintenance and process improvement.
+              </p>
+
+            </div>
+
+
+            {/* 04 */}
+            <div className="bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10">
+
+              <p className="text-xs font-bold tracking-[3px] text-slate-500">
+                04
+              </p>
+
+              <h3 className="text-xl font-bold mt-3">
+                Projects & Improvement
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-700 leading-6">
+                Greenfield projects, machinery commissioning, CAPEX,
+                productivity improvement, OEE and cost reduction.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          {/* A&I PHILOSOPHY */}
+          <div className="mt-8 bg-black text-white rounded-2xl p-7 md:p-8">
+
+            <p className="text-xs font-bold tracking-[3px] text-[#b7e36b]">
+              A&I PHILOSOPHY
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-bold mt-3 leading-tight">
+              Practical Manufacturing Solutions.
+              <br />
+              Hands-on Execution.
+              <br />
+              Sustainable Results.
+            </h2>
+
+            <p className="mt-4 text-sm md:text-base text-white/70 max-w-2xl leading-6">
+              A&I was created to provide manufacturers with practical
+              technical expertise, operational improvement support and
+              experienced troubleshooting assistance when it matters most.
+            </p>
+
+            <Link
+              href="/contact"
+              className="inline-block mt-6 bg-[#b7e36b] text-black px-5 py-2.5 rounded-full text-sm font-bold hover:bg-white transition"
+            >
+              DISCUSS YOUR REQUIREMENT →
+            </Link>
+
+          </div>
+
+        </div>
       </section>
 
     </main>
