@@ -1,51 +1,50 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import FloatingButtons from "./components/FloatingButtons";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import FloatingContact from "./components/FloatingContact";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "A&I Consulting | Manufacturing Consulting & Operational Excellence",
-    template: "%s | A&I Consulting",
+    default: "A&I | Tube, Pipe, Wire & Cable Industry Expert",
+    template: "%s | A&I",
   },
 
   description:
-    "A&I Consulting helps manufacturing companies improve productivity, reduce costs, execute greenfield projects, implement automation and achieve sustainable operational excellence through practical shop-floor leadership.",
+    "A&I provides technical consulting, operational improvement, emergency technical support, and industrial pipe & tube sourcing for continuous manufacturing industries.",
 
   keywords: [
-    "Manufacturing Consultant",
-    "Operational Excellence",
-    "Plant Head",
-    "Greenfield Project",
-    "Electroplating",
-    "Manufacturing Productivity",
-    "Automation",
-    "PLC",
-    "Industrial Engineering",
-    "Lean Manufacturing",
-    "Factory Consulting",
-    "Manufacturing Strategy",
+    "Tube Manufacturing Consultant",
+    "Pipe Manufacturing Consultant",
+    "Wire Manufacturing Consultant",
+    "Cable Manufacturing Consultant",
+    "Tube Mill Consultant",
+    "Pipe Mill Consultant",
+    "Emergency Technical Support",
+    "Tube Machinery",
+    "Pipe Machinery",
+    "Eddy Current Testing",
+    "Zinc Plating",
+    "Copper Plating",
+    "Industrial Pipe Trading",
+    "Industrial Tube Trading",
   ],
 
   authors: [
     {
-      name: "Nitin Kanodiya",
+      name: "A&I",
     },
   ],
 
-  creator: "A&I Consulting",
+  creator: "A&I",
 
   metadataBase: new URL("https://aimanufacturingconsultant.com"),
 
   openGraph: {
-    title: "A&I Consulting",
+    title: "A&I | Tube, Pipe, Wire & Cable Industry Expert",
     description:
-      "Practical Manufacturing Solutions. Hands-on Execution. Sustainable Results.",
+      "Technical expertise, operational improvement and reliable industrial sourcing for continuous manufacturing industries.",
     url: "https://aimanufacturingconsultant.com",
-    siteName: "A&I Consulting",
+    siteName: "A&I",
     locale: "en_IN",
     type: "website",
   },
@@ -67,16 +66,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white">
+      <body>
         <GoogleAnalytics />
 
-        <Navbar />
-
         {children}
-
-        <Footer />
-
-        {/* <FloatingButtons /> */}
+        <FloatingContact />
       </body>
     </html>
   );
