@@ -54,9 +54,9 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-4 mt-10">
 
             {/* 01 */}
-            <div className="bg-black text-white p-6 md:p-7 rounded-2xl">
+            <div className="bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10">
 
-              <p className="text-xs font-bold tracking-[3px] text-[#b7e36b]">
+              <p className="text-xs font-bold tracking-[3px] text-slate-500">
                 01
               </p>
 
@@ -64,7 +64,7 @@ export default function About() {
                 Tube Manufacturing
               </h3>
 
-              <p className="mt-2 text-sm text-white/70 leading-6">
+              <p className="mt-2 text-sm text-slate-700 leading-6">
                 Hands-on experience across tube manufacturing, downstream
                 processes, plating, coating and extrusion.
               </p>

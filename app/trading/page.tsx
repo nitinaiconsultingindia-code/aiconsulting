@@ -14,16 +14,17 @@ export default function Trading() {
           <div className="max-w-4xl">
 
             <p className="text-xs font-bold tracking-[4px] uppercase mb-5">
-              PIPE & TUBE TRADING
+              BUNDY TUBING & PIPE TRADING
             </p>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05]">
-              Industrial Pipe & Tube Sourcing
+              Bundy Tubing & Special Pipe / Tube Sourcing
             </h1>
 
             <p className="mt-6 text-base md:text-lg leading-7 max-w-3xl text-slate-800">
-              We source and supply pipes and tubes to your required
-              specification, grade, size and application.
+              We source and supply Bundy tubing, special pipes and tubes
+              according to your required specification, grade, size,
+              quantity and application.
             </p>
 
           </div>
@@ -32,66 +33,74 @@ export default function Trading() {
           {/* PRODUCTS */}
           <div className="grid md:grid-cols-2 gap-4 mt-10">
 
+            {/* 01 */}
             <Product
               number="01"
-              title="Carbon Steel Pipes & Tubes"
-              text="Industrial carbon steel pipe and tube sourcing for manufacturing and engineering applications."
-            />
-
-            <Product
-              number="02"
-              title="Stainless Steel Pipes & Tubes"
-              text="Stainless steel products available in required grades, sizes and specifications."
-            />
-
-            <Product
-              number="03"
-              title="Alloy Steel Pipes & Tubes"
-              text="Alloy steel pipe and tube sourcing for demanding industrial applications."
-            />
-
-            <Product
-              number="04"
-              title="ERW Pipes & Tubes"
-              text="ERW products sourced according to required dimensions, grade and application."
-              dark
-            />
-
-            <Product
-              number="05"
-              title="Seamless Pipes & Tubes"
-              text="Seamless products for applications requiring specific material and dimensional requirements."
-            />
-
-            <Product
-              number="06"
-              title="Precision Tubes"
-              text="Precision tube sourcing for applications requiring tighter dimensional and quality requirements."
-            />
-
-            <Product
-              number="07"
-              title="Boiler & Heat Exchanger Tubes"
-              text="Tubes for boiler, heat exchanger and other thermal equipment applications."
-            />
-
-            <Product
-              number="08"
-              title="Special / Custom Requirements"
-              text="Support for sourcing special sizes, grades, specifications and application-specific pipe and tube requirements."
-              dark
-            />
-
-            <Product
-              number="09"
               title="Bundy DW Tubes"
               text="Double-wall Bundy tubes for automotive and industrial applications."
             />
 
+            {/* 02 */}
             <Product
-              number="10"
+              number="02"
               title="Bundy SW Tubes"
               text="Single-wall Bundy tubes for required automotive and industrial applications."
+            />
+
+            {/* 03 */}
+            <Product
+              number="03"
+              title="Carbon Steel Pipes & Tubes"
+              text="Industrial carbon steel pipe and tube sourcing for manufacturing and engineering applications."
+            />
+
+            {/* 04 */}
+            <Product
+              number="04"
+              title="Stainless Steel Pipes & Tubes"
+              text="Stainless steel products available in required grades, sizes and specifications."
+            />
+
+            {/* 05 */}
+            <Product
+              number="05"
+              title="Alloy Steel Pipes & Tubes"
+              text="Alloy steel pipe and tube sourcing for demanding industrial applications."
+            />
+
+            {/* 06 */}
+            <Product
+              number="06"
+              title="ERW Pipes & Tubes"
+              text="ERW products sourced according to required dimensions, grade and application."
+            />
+
+            {/* 07 */}
+            <Product
+              number="07"
+              title="Seamless Pipes & Tubes"
+              text="Seamless products for applications requiring specific material and dimensional requirements."
+            />
+
+            {/* 08 */}
+            <Product
+              number="08"
+              title="Precision Tubes"
+              text="Precision tube sourcing for applications requiring tighter dimensional and quality requirements."
+            />
+
+            {/* 09 */}
+            <Product
+              number="09"
+              title="Boiler & Heat Exchanger Tubes"
+              text="Tubes for boiler, heat exchanger and other thermal equipment applications."
+            />
+
+            {/* 10 */}
+            <Product
+              number="10"
+              title="Special / Custom Requirements"
+              text="Support for sourcing special sizes, grades, specifications and application-specific pipe and tube requirements."
             />
 
           </div>
@@ -136,29 +145,15 @@ function Product({
   number,
   title,
   text,
-  dark = false,
 }: {
   number: string;
   title: string;
   text: string;
-  dark?: boolean;
 }) {
   return (
-    <div
-      className={
-        dark
-          ? "bg-black text-white p-6 md:p-7 rounded-2xl"
-          : "bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10"
-      }
-    >
+    <div className="bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10">
 
-      <p
-        className={
-          dark
-            ? "text-xs font-bold tracking-[3px] text-[#b7e36b]"
-            : "text-xs font-bold tracking-[3px] text-slate-500"
-        }
-      >
+      <p className="text-xs font-bold tracking-[3px] text-slate-500">
         {number}
       </p>
 
@@ -166,13 +161,7 @@ function Product({
         {title}
       </h3>
 
-      <p
-        className={
-          dark
-            ? "mt-2 text-sm text-white/70 leading-6"
-            : "mt-2 text-sm text-slate-700 leading-6"
-        }
-      >
+      <p className="mt-2 text-sm text-slate-700 leading-6">
         {text}
       </p>
 

@@ -33,9 +33,9 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-3 mt-8">
 
             {/* CONSULTING */}
-            <div className="bg-black text-white p-6 md:p-7 rounded-2xl">
+            <div className="bg-white/80 border border-black/10 p-6 md:p-7 rounded-2xl">
 
-              <p className="text-xs font-bold tracking-[4px] text-[#b7e36b]">
+              <p className="text-xs font-bold tracking-[4px] text-slate-500">
                 CONSULTING
               </p>
 

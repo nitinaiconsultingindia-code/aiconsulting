@@ -43,7 +43,6 @@ export default function Consulting() {
               number="02"
               title="Emergency Process Troubleshooting"
               text="Rapid technical support for critical production problems, process instability, quality issues, breakdowns and recurring manufacturing losses."
-              dark
             />
 
             <Service
@@ -92,7 +91,6 @@ export default function Consulting() {
               number="10"
               title="Greenfield Projects & Machinery Commissioning"
               text="Support for new plant setup, machinery selection, installation, commissioning, stabilization and production ramp-up."
-              dark
             />
 
           </div>
@@ -138,29 +136,15 @@ function Service({
   number,
   title,
   text,
-  dark = false,
 }: {
   number: string;
   title: string;
   text: string;
-  dark?: boolean;
 }) {
   return (
-    <div
-      className={
-        dark
-          ? "bg-black text-white p-6 md:p-7 rounded-2xl"
-          : "bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10"
-      }
-    >
+    <div className="bg-white/80 p-6 md:p-7 rounded-2xl border border-black/10">
 
-      <p
-        className={
-          dark
-            ? "text-xs font-bold tracking-[3px] text-[#b7e36b]"
-            : "text-xs font-bold tracking-[3px] text-slate-500"
-        }
-      >
+      <p className="text-xs font-bold tracking-[3px] text-slate-500">
         {number}
       </p>
 
@@ -168,13 +152,7 @@ function Service({
         {title}
       </h3>
 
-      <p
-        className={
-          dark
-            ? "mt-2 text-sm text-white/70 leading-6"
-            : "mt-2 text-sm text-slate-700 leading-6"
-        }
-      >
+      <p className="mt-2 text-sm text-slate-700 leading-6">
         {text}
       </p>
 
