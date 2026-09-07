@@ -110,9 +110,9 @@ export default function Home() {
                   •
                 </span>
                 <p className="text-base md:text-lg font-bold leading-tight">
-                  Webpage Designing and Support
+                  Webpage Designing and Consultancy
                   <br />
-                  for New Start-up Business
+                  Support for New Start-up/Business
                 </p>
               </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
                   •
                 </span>
                 <p className="text-base md:text-lg font-bold leading-tight">
-                  Project Commissioning Support
+                  Project/Line Commissioning Support
                   <br />
                   <span className="font-medium text-sm md:text-base">
                     for New and Existing Plants

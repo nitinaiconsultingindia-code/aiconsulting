@@ -25,7 +25,7 @@ export default function About() {
             <div className="mt-7">
 
               <h2 className="text-2xl md:text-3xl font-bold">
-                Nitin Kanodiya
+                Nitinkumar
               </h2>
 
               <p className="mt-2 text-sm md:text-base font-semibold tracking-wide">
